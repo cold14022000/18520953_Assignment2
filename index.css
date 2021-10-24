@@ -2,8 +2,6 @@ html {
     height: 100%;
   }
   
-
-
   #main-holder {
     width: 100%;
     height: 100%;
@@ -39,6 +37,19 @@ html {
     color: #000000;
     background-color: white;
   }
+
+  h2{
+    text-align: left;
+    display: block;
+    padding: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    background-color: white;
+  }
+ a{
+  font-size: 30px;
+ }
 
   #login-error-msg {
     width: 23%;
@@ -85,7 +96,7 @@ html {
     cursor: pointer;
     outline: none;
   }
-  #login-form-submit a:hover{
+  login-form-submit a:hover{
     background-color: yellow;
   }
 
@@ -121,4 +132,10 @@ html {
 .navbar a:hover {
   background-color: #ddd;
   color: black;
+}
+
+.intro {
+  align-self: left;
+  display: block;
+
 }
