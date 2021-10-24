@@ -1,81 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <meta name="description" content="CDN Bootstrap">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" >
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons">
-    <link rel="stylesgeet" href="https://rawgit.com/creativetimofficial/material-kit/master/assets/css/material-kit.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="index.css">
+  <script defer src="index.js"></script>
+  <style>
+    .banner {
+   background-repeat: no-repeat;
+   background-size: 100% 200%;
+  }
+  </style>
 </head>
 
-<body class="profile-page">
-    <div class="page-header header-filter" data-parallax="true" style="background-image:url('https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2018/08/ho-guom-ha-noi-vntrip.jpg');"></div>
-    <div class="main main-raised">
-		<div class="profile-content">
-            <div class="container">
-                <div class="row">
-	                <div class="col-md-6 ml-auto mr-auto">
-        	           <div class="profile">
-	                        <div class="avatar">
-	                            <img src="https://courses.uit.edu.vn/pluginfile.php/102552/user/icon/classic/f1?rev=1932031">
-	                        </div>
-	                        <div class="name">
-	                            <h3 class="title">Nguyen Chi Kien</h3>
-								<h6>MSSV: 18520953</h6>
-	                        </div>
-	                    </div>
-    	            </div>
-                </div>
-                <div class="description text-center">
-                    <p>Sinh vien tai truong DH CNTT. Sinh ra va lon len o Ha Noi.</p>
-                </div>
-            </div>
-        
-          <div class="tab-content tab-space">
-            <div class="description text-center">
-                <p>Mot vai anh nen ve Ha Noi.</p>
-            </div>
-            <div class="tab-pane active text-center gallery">
-  				<div class="row">
-  					<div class="col-md">
-  					    <img src="https://owa.bestprice.vn/images/destinations/uploads/trung-tam-thanh-pho-ha-noi-603da1f235b38.jpg" class="rounded">
-  						<img src="https://mediaim.expedia.com/destination/1/2d2c5e420693f69db0d2f6400991717a.jpg?impolicy=fcrop&w=536&h=384&q=high" class="rounded">
-  						<img src="https://nhipsonghanoi.hanoimoi.com.vn/Uploads/images/phananh/2021/03/14/hanoi8.jpg" class="rounded">
-  						<img src="https://media.vietq.vn/files/xuanhiep/2021/07/17/ha-noi.jpg" class="rounded">
-  					</div>
-  				</div>
-  			</div>
-          </div>
-        </div>
-    </div>
-    </div>
-    <div class="description text-center">
-        <p>Mot chut nhac de thu gian dau oc.</p>
-</div>
-<div class="copy">List nhac</div>
-        
-        <div class="panel panel-default audio-panel">
-            
-            <audio id="audio" autoplay preload="auto" tabindex="0" controls>
-                <source src="Tokyo Ghoul - Glassy Sky _東京喰種 -トーキョーグール-_.mp3" type="audio/mp3">
-            </audio>
-            
-        </div>
-        <div class="description ">
-            <p>Tokyo Ghoul - Glassy Sky.</p>
-        </div>
+<body>
+  <div class="banner" style="background-image: url('https://vietnamdiscovery.com/wp-content/uploads/2019/09/Hoan-Kiem-Lake-Hanoi.jpg');">
+  </div>
+  
+  <div class="navbar">
+    <a href="#" class="active">Home</a>
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+  </div>
+
+  <div id="main-holder">
+    <p> This is my school project </p>
+    <h1 id="login-header">Login</h1>
     
-  <ul id="playlist">
-        
-       <li class="active list-group-item"><div class="panel panel-default audio-panel">
-           
-         <audio id="audio" preload="auto" tabindex="0" controls>
-                <source src="Air (TV) Kanon (2006) Clannad After Story - Piano Medley.mp3" type="audio/mp3">
-         </audio>
-             <div class="description text-center">
-                  <p>Keys Studio Piano Medley.</p>
-             </div>
-        </li>
-    </ul>
+    <div id="login-error-msg-holder">
+      <p id="login-error-msg">Invalid username and/or password</p>
+    </div>
+    
+    <form id="login-form">
+      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+      <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+      <input type="submit" value="Login" id="login-form-submit">
+    </form>
+  
+  </div>
 </body>
+
+</html>
